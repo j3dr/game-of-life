@@ -17,6 +17,12 @@ find_package(SDL2_gfx REQUIRED)
 find_package(SDL2_ttf REQUIRED)
 find_package(SDL2 REQUIRED)
 
+# Fix "IMPORTED_IMPLIB not set for imported target SDL2::SDL2" error 
+if(TARGET SDL2::SDL2)
+    get_target_property(SDL2_LOCATION SDL2::SDL2 IMPORTED_LOCATION)
+    set_target_properties(SDL2::SDL2 PROPERTIES IMPORTED_IMPLIB "/usr/x86_64-w64-mingw32/lib/libSDL2.dll.a")
+endif()
+
 include_directories(${SDL2_INCLUDE_DIRS} ${SDL2_GFX_INCLUDE_DIRS} ${SDL2_TTF_INCLUDE_DIRS})
 
 add_executable(${PROJECT_NAME} src/main.c src/utils.c src/cells.c lib/SDL_FontCache.c)
