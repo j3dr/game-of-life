@@ -1,14 +1,14 @@
-![default](https://github.com/ndr3www/game-of-life/assets/164680506/e554f5ff-af9d-43b2-86fc-b9932d9717ac) ![mouse](https://github.com/user-attachments/assets/6dc48ef0-d5cc-4330-8f48-56eea50a2027)
+![default](https://github.com/j3dr/game-of-life/assets/164680506/e554f5ff-af9d-43b2-86fc-b9932d9717ac) ![mouse](https://github.com/user-attachments/assets/6dc48ef0-d5cc-4330-8f48-56eea50a2027)
 
 
 ## Installation
 
 ### Linux
-Download the Linux package from [latest release](https://github.com/ndr3www/game-of-life/releases/latest), unzip and install these dependencies through your distribution's package manager:
+Download the Linux package from [latest release](https://github.com/j3dr/game-of-life/releases/latest), unzip and install these dependencies through your distribution's package manager:
 `SDL2` `SDL2_gfx` `SDL2_ttf`
 
 ### Windows
-Just download the Windows package from [latest release](https://github.com/ndr3www/game-of-life/releases/latest), unzip and you're good to go!
+Just download the Windows package from [latest release](https://github.com/j3dr/game-of-life/releases/latest), unzip and you're good to go!
 
 ## Building from source
 
@@ -19,7 +19,7 @@ First, you need to install following dependencies:
 and then just:
 
 ```bash
-git clone https://github.com/ndr3www/game-of-life
+git clone https://github.com/j3dr/game-of-life
 cd game-of-life
 mkdir build
 cd build
